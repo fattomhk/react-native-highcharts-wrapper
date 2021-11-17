@@ -75,8 +75,10 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-unimodules": "*",
-    "react-native-webview": "*"
+    "react-native-webview": "*",
+    "expo": "^43.0.3",
+    "expo-file-system": "^13.0.3",
+    "expo-asset": "^8.4.3"
   },
   "jest": {
     "preset": "react-native",

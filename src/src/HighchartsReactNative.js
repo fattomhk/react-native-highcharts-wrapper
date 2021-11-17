@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, Dimensions, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
-import { Asset, FileSystem } from 'react-native-unimodules';
+import { Asset } from 'expo-asset';
+import * as FileSystem from 'expo-file-system';
+
 import HighchartsModules from './HighchartsModules';
 
 const win = Dimensions.get('window');
