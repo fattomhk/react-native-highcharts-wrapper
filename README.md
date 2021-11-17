@@ -1,4 +1,4 @@
-# react-native-highcharts-wrapper
+# react-native-highcharts-webview
 Highcharts react native wrapper, fork from [HighCharts](https://github.com/highcharts/highcharts-react-native).
 ## Platforms
 [x] iOS
@@ -12,7 +12,7 @@ Highcharts react native wrapper, fork from [HighCharts](https://github.com/highc
 ## Installation
 ### Install dependencies
 ```sh
-yarn add react-native-highcharts-wrapper
+yarn add react-native-highcharts-webview
 yarn add expo
 ```
 
@@ -92,7 +92,7 @@ yarn example android
 ```js
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HighchartsReactNative from 'react-native-highcharts-wrapper';
+import HighchartsReactNative from 'react-native-highcharts-webview';
 
 export default class App extends React.Component {
   constructor(props) {

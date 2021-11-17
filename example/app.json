@@ -1,10 +1,10 @@
 {
-  "name": "react-native-highcharts-wrapper-example",
+  "name": "react-native-highcharts-webview-example",
   "displayName": "HighchartsWrapper Example",
   "expo": {
-    "name": "react-native-highcharts-wrapper-example",
-    "slug": "react-native-highcharts-wrapper-example",
-    "description": "Example app for react-native-highcharts-wrapper",
+    "name": "react-native-highcharts-webview-example",
+    "slug": "react-native-highcharts-webview-example",
+    "description": "Example app for react-native-highcharts-webview",
     "privacy": "public",
     "version": "1.0.0",
     "platforms": [

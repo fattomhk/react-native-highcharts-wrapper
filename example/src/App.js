@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HighchartsReactNative from 'react-native-highcharts-wrapper';
+import HighchartsReactNative from 'react-native-highcharts-webview';
 
 export default class App extends React.Component {
   constructor(props) {

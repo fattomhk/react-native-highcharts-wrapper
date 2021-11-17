@@ -1,6 +1,6 @@
 {
-  "name": "react-native-highcharts-wrapper-example",
-  "description": "Example app for react-native-highcharts-wrapper",
+  "name": "react-native-highcharts-webview-example",
+  "description": "Example app for react-native-highcharts-webview",
   "version": "0.0.1",
   "private": true,
   "main": "index",

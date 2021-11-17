@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-highcharts-wrapper": ["./src/index"]
+      "react-native-highcharts-webview": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

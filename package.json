@@ -1,5 +1,5 @@
 {
-  "name": "react-native-highcharts-wrapper",
+  "name": "react-native-highcharts-webview",
   "version": "0.1.0",
   "description": "Highcharts react native wrapper",
   "main": "lib/commonjs/index",
