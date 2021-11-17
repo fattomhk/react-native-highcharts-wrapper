@@ -76,9 +76,7 @@
     "react": "*",
     "react-native": "*",
     "react-native-webview": "*",
-    "expo": "^43.0.3",
-    "expo-file-system": "^13.0.3",
-    "expo-asset": "^8.4.3"
+    "expo": "^43.0.3"
   },
   "jest": {
     "preset": "react-native",

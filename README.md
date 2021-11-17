@@ -5,10 +5,25 @@ Highcharts react native wrapper, fork from [HighCharts](https://github.com/highc
 [x] Android
 [ ] Web
 
-## Installation
+## Prerequisites
+- expo `>=43.0.3`, we are using the `Asset` and `FileSystem` packages
+- react-native-webview
 
+## Installation
+### Install dependencies
 ```sh
 yarn add react-native-highcharts-wrapper
+yarn add expo
+```
+
+### Extra steps for bare react native projects
+1. follow the setup guide of [Expo](https://docs.expo.dev/bare/installing-expo-modules/)
+2. Add permissions to Android manifest
+```html
+<!-- Added permissions -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
 ```
 
 ### Edit metro.config.js
@@ -74,7 +89,6 @@ yarn example android
 ```
 
 ## Example
-
 ```js
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -83,7 +97,6 @@ import HighchartsReactNative from 'react-native-highcharts-wrapper';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       chartOptions: {
         series: [
@@ -109,9 +122,7 @@ export default class App extends React.Component {
 ```
 
 ## Options details
-
 Available properties:
-
 ```jsx
   <HighchartsReact
     styles={styles}
