@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-highcharts-wrapper.podspec",
+    "react-native-highcharts-webview.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -37,13 +37,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/fattomhk/react-native-highcharts-wrapper",
-  "author": "Horst Leung <horstleung@gmail.com> (https://github.com/fattomhk/react-native-highcharts-wrapper)",
+  "repository": "https://github.com/fattomhk/react-native-highcharts-webview",
+  "author": "Horst Leung <horstleung@gmail.com> (https://github.com/fattomhk/react-native-highcharts-webview)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fattomhk/react-native-highcharts-wrapper/issues"
+    "url": "https://github.com/fattomhk/react-native-highcharts-webview/issues"
   },
-  "homepage": "https://github.com/fattomhk/react-native-highcharts-wrapper#readme",
+  "homepage": "https://github.com/fattomhk/react-native-highcharts-webview#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
