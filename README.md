@@ -12,12 +12,15 @@ Highcharts react native wrapper, fork from [HighCharts](https://github.com/highc
 ## Installation
 ### Install dependencies
 ```sh
+yarn add react-native-webview
 yarn add react-native-highcharts-webview
-yarn add expo
 ```
 
-### Extra steps for bare react native projects
-1. follow the setup guide of [Expo](https://docs.expo.dev/bare/installing-expo-modules/)
+### Extra steps for bare react native projects ( not an expo managed project )
+1. Run this script to install and config automatically or follow the setup guide of [Expo](https://docs.expo.dev/bare/installing-expo-modules/)
+```
+npx install-expo-modules@latest
+```
 2. Add permissions to Android manifest
 ```html
 <!-- Added permissions -->
@@ -26,20 +29,11 @@ yarn add expo
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+#### 
+
 ### Edit metro.config.js
 ```javascript
-const path = require('path');
-const blacklist = require('metro-config/src/defaults/blacklist');
-const escape = require('escape-string-regexp');
-const pak = require('../package.json');
 const { getDefaultConfig } = require('metro-config'); // <-- add this
-
-const root = path.resolve(__dirname, '..');
-
-const modules = Object.keys({
-  ...pak.peerDependencies,
-});
-
 module.exports = (async () => {
     //<------add this
   const {
@@ -48,20 +42,7 @@ module.exports = (async () => {
    //</add this-------->
 
   return {
-    projectRoot: __dirname,
-    watchFolders: [root],
     resolver: {
-      blacklistRE: blacklist(
-        modules.map(
-          (m) =>
-            new RegExp(`^${escape(path.join(root, 'node_modules', m))}\\/.*$`)
-        )
-      ),
-      sourceExts, ///<------add this
-      extraNodeModules: modules.reduce((acc, name) => {
-        acc[name] = path.join(__dirname, 'node_modules', name);
-        return acc;
-      }, {}),
       assetExts: [...assetExts, 'hcscript'], ///<------add this
     },
     transformer: {
